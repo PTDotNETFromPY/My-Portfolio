@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trung Pham Portfolio</title>
+    <link rel="stylesheet" href="site.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="glow-bg"></div>
+    <div class="tech-particles">
+      <canvas id="particleCanvas"></canvas>
+    </div>
+
+    <header data-aos="zoom-in">
+      <div class="header-actions">
+        <button class="theme-toggle" onclick="toggleTheme()">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button id="music-toggle" class="music-toggle" title="Toggle Music">
+          <i class="fas fa-music"></i>
+        </button>
+      </div>
+      <audio id="bg-music" loop>
+        <source src="files/background-music.mp3" type="audio/mpeg" />
+      </audio>
+
+      <div class="logo-area">
+        <img src="image/avatar.jpg" alt="Trung Pham" class="avatar" />
+        <h1 id="typewriter" class="typing"></h1>
+        <p class="subtyping">A Passionate .NET Backend Developer</p>
+      </div>
+
+      <button class="hamburger" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav id="nav-links" class="nav-collapsed">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main role="main" class="container">
+      <section id="about" data-aos="fade-up">
+        <h2>About Me</h2>
+        <p>
+          I'm Trung Pham, a backend developer with a strong passion for .NET
+          technologies and writing clean, maintainable code. As a recent
+          graduate, I’ve dedicated my time to mastering C#, ASP.NET Core, Entity
+          Framework, and RESTful API development, focusing on building
+          efficient, secure, and scalable backend systems. Through academic
+          projects and hands-on internship experience, I’ve learned how to turn
+          complex business requirements into practical solutions, while adhering
+          to best practices in software design and architecture. I take pride in
+          delivering clean, testable code and continuously seek to improve both
+          technically and professionally. I'm eager to contribute to teams that
+          value quality, collaboration, and innovation — where I can grow my
+          backend expertise, learn from experienced developers, and take on
+          real-world challenges, especially in areas like system design and
+          cloud-based development.
+        </p>
+      </section>
+
+      <section id="skills" data-aos="fade-up">
+        <h2>🛠️ Skills</h2>
+        <ul>
+          <li>C# / ASP.NET Core</li>
+          <li>Entity Framework / LINQ / SQL Server</li>
+          <li>RESTful API / JWT / SignalR</li>
+          <li>HTML, CSS, JS, Bootstrap</li>
+          <li>Git, GitHub</li>
+        </ul>
+      </section>
+
+      <section id="projects" data-aos="fade-up">
+        <h2>📂 Projects</h2>
+        <p>🌐 Social App - .NET MAUI (Click on my GitHub for more details)</p>
+      </section>
+
+      <section id="experience" data-aos="fade-up">
+        <h2>💼 Experience</h2>
+        <p>🏢 Intern at FAST Software Company (11/2024 - 6/2025)</p>
+      </section>
+
+      <section id="education" data-aos="fade-up">
+        <h2>🏫 Education</h2>
+        <p>💻 Software Engineering</p>
+        <p>🎓 UEH - College of Technology and Design</p>
+      </section>
+
+      <section class="metrics" data-aos="fade-up">
+        <div class="stat">
+          <i class="fa-solid fa-code"></i>
+          <p><strong>8+</strong><br />Projects</p>
+        </div>
+        <div class="stat">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <p><strong>3.56</strong><br />GPA</p>
+        </div>
+        <div class="stat">
+          <i class="fa-solid fa-briefcase"></i>
+          <p><strong>1</strong><br />Internships</p>
+        </div>
+      </section>
+
+      <section id="contact" data-aos="fade-up">
+        <h2>📬 Contact</h2>
+        <p>
+          ✉️ Email:
+          <a href="mailto:phamtrung2004py@gmail.com"
+            >phamtrung2004py@gmail.com</a
+          ><br />
+          📞 Phone: 0867529150
+        </p>
+      </section>
+    </main>
+
+    <footer data-aos="fade-up">
+      <p>&copy; 2025 - Trung Pham | UEH - College of Technology and Design</p>
+      <div class="social-links">
+        <a href="mailto:phamtrung2004py@gmail.com" title="Email"
+          ><i class="fa-solid fa-envelope"></i
+        ></a>
+        <a
+          href="https://github.com/PhamTrung1204"
+          target="_blank"
+          title="GitHub"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a
+          href="https://linkedin.com/in/phamtrung2004py"
+          target="_blank"
+          title="LinkedIn"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="files/TrungPham_CV.pdf" download title="Download CV"
+          ><i class="fa-solid fa-file-arrow-down"></i> Download CV</a
+        >
+      </div>
+    </footer>
+
+    <div class="shooting-stars">
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="site.js"></script>
+  </body>
+</html>
